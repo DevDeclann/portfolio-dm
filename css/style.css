@@ -101,9 +101,10 @@
 #home{
     height: 100vh;
     min-height: 500px;
-    background: url(../images/IMG_6991.JPG) no-repeat center;
+    background: url(../images/) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    background: linear-gradient(to right, #131313, #3f3fb4);
 }
   
 #home .inner-width{
