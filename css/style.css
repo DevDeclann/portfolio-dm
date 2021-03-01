@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Ubuntu",sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* Navigation section */ 
+.navbar{
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    padding: 30px 0;
+    top: 0;
+    z-index: 999;
+    transition: .3s linear;
+}
+  
+.inner-width{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}
+  
+.navbar .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.logo{
+    width: 44px; 
+    height: 40px;
+    font-weight: 400;
+    color: white;
+    background-size: contain;
+    font-size: 40px;
+    color: #111;
+}
+
+.menu-toggler{
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+  
+.menu-toggler span{
+    display: block;
+    height: 3px;
+    background-color: #111;
+    margin: 6px 0;
+    position: relative;
+    transition: .3s linear;
+}
+  
+.navbar-menu a{
+    color: #111;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .2s linear;
+    text-align: center;
+}
+  
+.navbar-menu a:hover{
+    color: #1f6bdc !important;
+}
+/* End navigation section */ 
+
+/* Sticky navigation section*/
+.sticky{
+    background-color: #353b48;
+    padding: 18px 0;
+}
+  
+.sticky .logo{
+    background-image: url();
+    font-size: 40px;
+    color: #fff;
+}
+  
+.sticky .navbar-menu a{
+    color: #fff;
+}
+  
+.sticky .menu-toggler span{
+    background-color: #1f6bdc;
+}
+/* End Sticky navigation section*/
+
+
+/* Home content */
+#home{
+    height: 100vh;
+    min-height: 500px;
+    background: url(../images/IMG_6991.JPG) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+#home .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#home .content{
+    width: 100%;
+    color: #fff;
+}
+
+#home .content h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+#home .content h1::after{
+    content: "Declan";
+    animation: textanim 10s linear infinite;
+}
+
+@keyframes textanim{
+    35%{
+        content: "A Developer";
+    }
+    80%{
+        content: "A Student";
+    }
+    95%{
+        content: "A Pentester";
+    }
+}
+/* End Home content */
+
+
+/* Social Media Section */
+.sm a{
+    color: #fff;
+    font-size: 60px;
+    margin: 16px;
+}
+
+.sm a:hover{
+    color: #1f6bdc;
+    transition: .2s;
+}
+/* Social Media Section */
+
+
+/* Main home buttons */
+#home .buttons a{
+    color: #1f6bdc;
+    display: inline-block;
+    margin: 15px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #1f6bdc;
+    padding: 10px;
+    transition: .2s linear;
+}
+
+#home .buttons a:hover,
+#home .buttons a:nth-child(2)
+{
+    background-color: #1f6bdc;
+    transition: .9s;
+    color: #fff;
+}
+
+
+
+
+/* About Section */
+section{
+    padding: 100px 0;
+    background-color: #f1f1f1;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+    font-size: 26px;
+    padding-bottom: 20px;
+    color: #111;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #111;
+    bottom: 0;
+    left: calc(50% - 40px);
+}
+
+/* red box under about
+.section-title::after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 10px;
+    background-color: red;
+    border: 4px solid #f1f1f1;
+    left: calc(50% - 12px);
+    bottom: -7px; 
+}
+*/
+.about-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-pic{
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #161616;
+    margin-right: 100px;
+    filter: drop-shadow(4px 6px 8px #1251ff);
+}
+
+.about-text{
+    flex: 1;
+}
+
+.about-text h3{
+    margin: 10px 0;
+    color: #444;
+    font-size: 16px;
+}
+
+.about-text h3 span:nth-child(1):after,
+.about-text h3 span:nth-child(2):after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #444;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 14px; 
+}
+
+.about-text p{
+    font-size: 17px;
+    text-align: justify;
+    line-height: 26px;
+    margin-top: 20px;
+}
+
+/* Skill section */
+.skills{
+    margin-top: 40px;   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill{
+    width: calc(50% - 20px);
+    margin: 15px 0;
+}
+
+.skill-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-bar{
+    height: 3px;
+    background-color: #ddd;
+    margin-top: 14px;
+    position: relative;
+}
+
+.skill-bar::after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    background-color: #1f6bdcc0;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+.html:after{
+    width: 92%;
+}
+.css:after{
+    width: 79%;
+}
+.js:after{
+    width: 22%;
+}
+.php:after{
+    width: 20%;
+}
+.py:after{
+    width: 24%;
+}
+.java:after{
+    width: 5%;
+}
+/* End Skill section */
+
+/* Services Section */
+
+
+
+
+/* Service 1 */
+#services{
+    background-color: #2b303a;
+    padding-top: 80px;
+    padding-bottom: 200px;
+}
+
+#services h1{
+    font-size: 2.5rem;
+    color: #1f6bdcd5;
+    text-align: center;
+    font-weight: 400;
+}
+
+.service-title-what-i-do-text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #9d9d9d;
+}
+
+.services{
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-1{
+    width: 320px;
+    background-color: #fff;
+    padding: 15px;
+    margin: 25px; 
+    border-radius: 10px;
+    box-shadow: #2b2b2b 5px 5px;
+    filter: drop-shadow(4px 6px 8px rgb(24, 69, 218));
+}
+
+.img{
+    padding-top: 30px;
+}
+
+
+/*? IMAGE ?*/
+{
+    height: 170px;
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*?IMAGE ?*/
+
+
+.description{
+    padding-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.description h2 span{
+    color: #1845da;
+}
+
+.description h2{
+    text-transform: uppercase;
+}
+
+.description p{
+    margin-top: 20px;
+    color: #3c3b3b;
+}
+/* End of Service 1 */
+
+
+
+/* Service 2 */
+
+.service-2{
+    width: 320px;
+    background-color: #fff;
+    padding: 15px;
+    margin: 25px; 
+    border-radius: 10px;
+    box-shadow: #2b2b2b 5px 5px;
+    filter: drop-shadow(4px 6px 8px rgb(24, 69, 218));
+}
+
+.img2{
+    padding-top: 30px;
+}
+
+
+/*?IMAGE?*/
+{
+    height: 170px;
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*?IMAGE?*/
+
+
+
+.description-2{
+    padding-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.description-2 h2{
+    text-transform: uppercase;
+}
+
+.description-2 h2 span{
+    color: #1845da;
+}
+
+.description-2 p{
+    margin-top: 20px;
+    color: #3c3b3b;
+}
+
+.img3{
+    padding-top: 30px;
+}
+/* End of service 2 */
+
+/* Service 3 */
+.service-3{
+    width: 320px;
+    background-color: #fff;
+    padding: 15px;
+    margin: 25px; 
+    border-radius: 10px;
+    box-shadow: #2d2b2b 5px 5px;
+    filter: drop-shadow(4px 6px 8px #1845da);
+}
+
+.description-3{
+    padding-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.description-3 h2{
+    text-transform: uppercase;
+}
+
+.description-3 h2 span{
+    color: #1845da;
+}
+
+.description-3 p{
+    margin-top: 20px;
+    color: #3c3b3b;
+}
+
+/* End Services section */
+
+/* Contact section */
+
+
+
+
+
+/* Contact form */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+button[type=submit]{
+    background-color: red;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button[type="submit"]:hover{
+    background-color: #5e5e5e;
+    transition: .3s linear;
+}
+
+.container{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-top: 6px;
+}
+
+.column{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .column, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+/* End Contact form*/
+
+
+
+
+
+
+/* End Contact section */
+
+/* Footer section */
+.footer{
+  text-align: center;
+  height: 300px;
+  background: #253c66d5;
+  padding: 30px;
+  color: #fff;
+}
+
+.footer-sm{
+    height: 140px;
+    font-size: 60px;
+}
+
+.footer-sm a{
+    color: #fff;
+}
+
+.footer-sm a:hover{
+    color: #cfcece;
+    transition: all 0.4s ease-out;
+}
+
+.footer-triangle{
+    padding: 0;
+    margin-top: -40px;
+}
+
+.copyright-text span{
+    color: #c0c0c0;
+}
+/* End Footer section */
+
+
+/* Iphone Size */
+@media screen and (max-width: 980px){
+    .menu-toggler{
+        display: block;
+    }
+
+    .navbar-menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        top: 0;
+        right: -100%;
+        max-width: 400px;
+        padding: 80px 50px;
+        transition: .3s linear;
+    }
+    
+
+    .navbar-menu a{
+        display: block;
+        font-size: 30px;
+        margin: 30px 0;
+    }
+    
+
+    .sticky .navbar-menu{
+        background-color: #353b48;
+    }
+
+    .navbar-menu.active{
+        right: 0;
+    }
+
+    .menu-toggler.active span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 4px;
+    }
+    
+    .menu-toggler.active span:nth-child(2){
+        opacity: 0;
+    }
+    
+    .menu-toggler.active span:nth-child(3){
+        transform: rotate(45deg);
+        bottom: 14px;
+    }
+    .inner-width{
+        max-width: 800px;
+    }
+
+    .about-pic{
+        margin: 0 auto 60px;
+    }
+
+    .about-text{
+        flex: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .inner-width{
+        padding: 0 20px;
+    }
+
+    .skill{
+        width: 100%;
+    }
+}
+/* End Iphone Size Section */
+
