@@ -298,21 +298,21 @@ section{
 }
 
 .html:after{
-    width: 92%;
+    width: 63%;
 }
 .css:after{
-    width: 79%;
+    width: 59%;
 }
 .js:after{
-    width: 22%;
+    width: 12%;
 }
-.php:after{
+.lua:after{
     width: 20%;
 }
 .py:after{
-    width: 24%;
+    width: 14%;
 }
-.java:after{
+.reactjs:after{
     width: 5%;
 }
 /* End Skill section */
