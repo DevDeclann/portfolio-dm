@@ -298,7 +298,7 @@ section{
 }
 
 .html:after{
-    width: 63%;
+    width: 40%;
 }
 .css:after{
     width: 59%;
@@ -310,7 +310,7 @@ section{
     width: 20%;
 }
 .py:after{
-    width: 14%;
+    width: 10%;
 }
 .reactjs:after{
     width: 5%;
